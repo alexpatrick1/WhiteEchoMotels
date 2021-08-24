@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+footer {
+	background-color: #252669;
+	height: 150px;
+	color: #4ECB4A;
+	font-size: 100%;
+	text-align: left;
+	padding: 20px 150px;
+	font-family: 'Roboto', sans-serif;
+}
+
+[type='text'], select, [type='email'], [type='number'], [type='tel'], textarea {
+	display: inline-block;
+	padding: 0.5rem;
+	background: transparent;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	font-size: 0.95;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+/* Float four columns side by side */
+.main_content {
+	margin: auto;
+	width: 80%;
+}
+
+.float_right {
+	float: right;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.roomCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 600px;
+}
+
+.roomCard img {
+	width: 80%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #252669;
+}
+
+.topnav a {
+	font-family: 'Roboto', sans-serif;
+	float: right;
+	display: inline;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 4.0% 3%;
+	text-decoration: none;
+	font-size: 1.5vw;
+	overflow: hidden;
+}
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+	transition-duration: 0.4s;
+}
+.topnav a.active {
+	background-color: #4ECB4A;
+	color: #F2F2F2;
+}
+.topnav .icon {
+	display: none;
+}
+.topnav.responsive a {
+	float: none;
+	display: inline;
+	text-align: left;
+}
+
+.topnav img {
+	float: left;
+	height: auto;
+	width: 13vw;
+	padding: 0.5% 2%;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+	
+@media screen and (max-width: 500px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+	}}}
